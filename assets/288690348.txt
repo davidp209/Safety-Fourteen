@@ -1,0 +1,10 @@
+Nombre Archivo                  : 964898679-AUD-20230525-WA0019.opus
+Tamaño Archivo                  : 27 kB
+Tipo Archivo                    : OPUS
+File Type Extension             : opus
+MIME Type                       : audio/ogg
+Opus Version                    : 1
+Canales Audio                   : 1
+Frecuencia muestreo             : 16000
+Output Gain                     : 1
+Vendor                          : WhatsApp

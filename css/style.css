@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+.logo {
+  max-height: 100px;
+}
+
+.nombreEmpresa {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #cedae2;
+}
+
+.carrusel {
+  width: 50%;
+}
+
+.fraseCelebre {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 40px 0;
+}
+
+.contact-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #221f1f;
+  color: white;
+  padding: 10px 20px;
+  border-top: 3px solid #d4d700;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.phone-icon {
+  font-size: 24px;
+  color: #d4d700;
+}
+
+.contact-text strong {
+  color: #d4d700;
+}
+
+.service-info {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.logoMain {
+  max-height: 130px;
+}/*# sourceMappingURL=style.css.map */
