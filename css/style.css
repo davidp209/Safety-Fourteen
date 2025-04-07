@@ -66,4 +66,13 @@
 
 .logoMain {
   max-height: 130px;
+}
+
+.parallax {
+  background-image: url("/assets/parallax-image.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
