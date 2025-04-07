@@ -65,10 +65,217 @@ max-height: 40px;
     max-height: 130px;
 }
 .parallax {
-    background-image: url('/assets/parallax-image.jpg');
+    background-image: url('/assets/parallax/evolution@1x.webp');
     height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
+  .footer {
+    background-color: #e7f0b6;
+  
+    a {
+      color: #000;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    h5 {
+      margin-bottom: 1rem;
+    }
+  
+    .form-control {
+      width: 150px;
+      display: inline-block;
+    }
+  
+    button.btn-warning {
+      background-color: #c6d300;
+      border: none;
+      color: #000;
+      font-weight: bold;
+  
+      &:hover {
+        background-color: #b0bd00;
+      }
+    }
+  
+    .small {
+      font-size: 0.875rem;
+    }
+  
+    hr {
+      border-top: 1px solid #ccc;
+      margin: 1.5rem 0;
+    }
+  }
+  
+/* Estilos generales para el footer */
+.footer {
+  background-color: #211E1E; /* Fondo oscuro negro/gris */
+  color: #fff; /* Texto blanco por defecto */
+}
+
+/* Línea superior amarilla */
+.footer hr {
+  border-top: 2px solid #d4d700; /* Amarillo neón */
+}
+
+/* Títulos en amarillo neón */
+.footer h5.text-warning {
+  color: #d4d700; /* Amarillo neón */
+}
+
+/* Estilo para el texto de teléfono (amarillo neón) */
+.footer p.text-warning {
+  color: #d4d700; /* Amarillo neón */
+}
+
+/* Íconos de teléfono (rojo degradado) */
+.phone-icon {
+  background: linear-gradient(to right, #d22e4c, #e07ea0); /* Rojo a fucsia */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Texto aclaratorio en gris claro */
+.footer p.text-light,
+.footer a {
+  color: #cfcfcf; /* Gris claro */
+}
+
+.footer a:hover {
+  color: #fff; /* Blanco al pasar el ratón */
+}
+
+/* Input de teléfono */
+.form-control {
+  background-color: #333; /* Fondo oscuro para el input */
+  color: #fff; /* Texto blanco */
+  border: 1px solid #d4d700; /* Borde amarillo */
+}
+
+/* Botón de enviar */
+.btn-warning {
+  background-color: #d4d700; /* Amarillo neón */
+  border-color: #d4d700; /* Borde amarillo */
+}
+
+.btn-warning:hover {
+  background-color: #d22e4c; /* Rojo degradado al pasar el ratón */
+  border-color: #d22e4c; /* Rojo degradado al pasar el ratón */
+}
+
+
+  
+
+
+
+
+/* styles.scss */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-features li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-features li::before {
+  content: "✓";
+  color: green;
+  margin-right: 5px;
+}
+
+/* Estilos para la oferta especial */
+.special-offer {
+  grid-column: 1 / -1; /* Ocupa toda la fila */
+  border: 2px solid orange; /* Ejemplo de borde para destacar */
+  background-color: #f9f9f9; /* Fondo claro */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.special-offer-image {
+  max-width: 50%; /* Ajusta el tamaño de la imagen de la oferta */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.special-offer-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.special-offer-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.special-offer-features li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.special-offer-features li::before {
+  content: "⭐"; /* Un icono diferente para la oferta */
+  color: orange;
+  margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+
+  .special-offer {
+      grid-column: 1; /* Ocupa la columna en pantallas pequeñas */
+  }
+
+  .special-offer-image {
+      max-width: 80%;
+  }
+}
