@@ -74,14 +74,18 @@ max-height: 40px;
   }
   .parallax2 {
     background-image: url('/assets/parallax/2.jpg');
-    height: 400px; /* Ajusta la altura según sea necesario */
+        height: 400px; /* Ajusta la altura según sea necesario */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-
+  @media only screen and (max-device-width: 1366px) {
+    .parallax2, .parallax {
+      background-attachment: scroll;
+    }
+  }
 
 
 

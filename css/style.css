@@ -70,7 +70,7 @@
 }
 
 .parallax {
-  background-image: url("assets/parallax/parallax.jpeg");
+  background-image: url("/assets/parallax/parallax.jpeg");
   height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -79,7 +79,7 @@
 }
 
 .parallax2 {
-  background-image: url("assets/parallax/2.jpg");
+  background-image: url("/assets/parallax/2.jpg");
   height: 400px; /* Ajusta la altura según sea necesario */
   background-attachment: fixed;
   background-position: center;
@@ -87,6 +87,11 @@
   background-size: contain;
 }
 
+@media only screen and (max-device-width: 1366px) {
+  .parallax2, .parallax {
+    background-attachment: scroll;
+  }
+}
 /* Mejor alarma de españa */
 .icon-feature {
   width: 50px;
