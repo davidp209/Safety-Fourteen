@@ -193,16 +193,20 @@ max-height: 40px;
 }
 
 /* was */
-.was{
-  display:inline-block;
-  font-size:20px;
-  cursor:pointer;
+.fixed-call-button {
   position: fixed;
-  bottom:75px;
-  right:20px;
-  z-index: 1;
+  bottom: 20px; /* Distancia desde la parte inferior */
+  right: 20px; /* Distancia desde la parte derecha */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  padding: 10px; /* Espaciado interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
-  
+
+.fixed-call-button img {
+  width: 50px; /* Ajusta el tamaño del icono */
+  height: 50px;
+}
 /*imagen y texto */
 
 .contai {
