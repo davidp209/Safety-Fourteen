@@ -72,6 +72,16 @@ max-height: 40px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .parallax2 {
+    background-image: url('/assets/parallax/2.jpg');
+    height: 400px; /* Ajusta la altura según sea necesario */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+
 
 
 
@@ -193,7 +203,34 @@ max-height: 40px;
   z-index: 1;
 }
   
+/*imagen y texto */
 
+.contai {
+  .slogan {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1d3557;
+  }
+
+  img {
+    max-width: 70%;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #343a40;
+  }
+
+  .lead {
+    font-size: 1.125rem;
+    color: #495057;
+  }
+}
+
+/* fin imagen y texto*/
 
 
 
