@@ -65,7 +65,7 @@ max-height: 40px;
     max-height: 130px;
 }
 .parallax {
-    background-image: url('assets/parallax/parallax.jpeg');
+    background-image: url('/assets/parallax/parallax.jpeg');
     height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -73,7 +73,7 @@ max-height: 40px;
     background-size: cover;
   }
   .parallax2 {
-    background-image: url('assets/parallax/2.jpg');
+    background-image: url('/assets/parallax/2.jpg');
     height: 400px; /* Ajusta la altura según sea necesario */
     background-attachment: fixed;
     background-position: center;
