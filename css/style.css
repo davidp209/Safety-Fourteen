@@ -103,6 +103,14 @@
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .central-img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+}
 /* Fin "Mejor alarma de España" */
 .footer a {
   color: #000;
