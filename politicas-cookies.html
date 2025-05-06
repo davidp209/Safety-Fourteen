@@ -27,7 +27,7 @@
           <span class="service-info">(Servicio de atención telefónica en horario de oficina).</span>
         </div>
         <div class="branding">
-          <img src="assets/logo/cropped-LOGO_S14.png" alt="Logo Safety Fourteen S.L." class="logo">
+          <a href="index.html"> <img src="assets/logo/cropped-LOGO_S14.png" alt="Logo Safety Fourteen S.L." class="logo"> </a>
         </div>
       </div>
 
@@ -85,7 +85,7 @@
 
     <section class="mb-4">
       <h2 class="text-warning">Contacto</h2>
-      <p>Si tienes alguna pregunta sobre nuestra política de cookies, puedes ponerte en contacto con nosotros a través de nuestro correo electrónico: <a href="mailto:tu-email@dominio.com" class="text-warning">tu-email@dominio.com</a>.</p>
+      <p>Si tienes alguna pregunta sobre nuestra política de cookies, puedes ponerte en contacto con nosotros a través de nuestro correo electrónico: <a href="mailto:tramitacion@safety14.com" class="text-warning" onclick="copyEmail(event)">tramitacion@safety14.com</a>.</p>
     </section>
   </main>
 
@@ -97,11 +97,21 @@
   </footer>
 </body>
 
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
- 
+<script>
+  function copyEmail(event) {
+    if (!navigator.clipboard) {
+      alert('Copia manualmente: tramitacion@safety14.com');
+      return;
+    }
+    navigator.clipboard.writeText('tramitacion@safety14.com').then(() => {
+      alert('Correo copiado al portapapeles.');
+    }).catch(err => {
+      console.error('Error al copiar el correo: ', err);
+    });
+  }
+</script>
 
 </html>

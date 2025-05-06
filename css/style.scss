@@ -361,18 +361,16 @@ max-height: 80px;
       max-width: 80%;
   }
 }
-@keyframes bounce {
+@keyframes pulse {
   0%, 100% {
-    transform: translate(0, 0);
+    transform: scale(1); /* Tamaño original */
   }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translate(-5px, -5px); /* Sacudida hacia la izquierda y arriba */
-  }
-  20%, 40%, 60%, 80% {
-    transform: translate(5px, 5px); /* Sacudida hacia la derecha y abajo */
+  50% {
+    transform: scale(1.05); /* Crece ligeramente */
   }
 }
 
 .special-offer {
-  animation: bounce 5s infinite;
+  animation: pulse 3s infinite; /* Aplica la animación con un ciclo infinito */
 }
+
