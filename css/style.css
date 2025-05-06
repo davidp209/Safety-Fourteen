@@ -15,6 +15,7 @@
 
 .carrusel {
   width: 50%;
+  height: 50%;
 }
 
 .fraseCelebre {
@@ -62,7 +63,7 @@
 }
 
 .logo {
-  max-height: 40px;
+  max-height: 80px;
 }
 
 .logoMain {
@@ -70,16 +71,17 @@
 }
 
 .parallax {
-  background-image: url("assets/parallax/parallax.jpeg");
+  background-image: url("../assets/parallax/parallax2.jpeg");
   height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  position: relative;
 }
 
 .parallax2 {
-  background-image: url("assets/parallax/2.jpg");
+  background-image: url("../assets/parallax/2.jpg");
   height: 400px; /* Ajusta la altura según sea necesario */
   background-attachment: fixed;
   background-position: center;
@@ -90,6 +92,11 @@
 @media only screen and (max-device-width: 1366px) {
   .parallax2, .parallax {
     background-attachment: scroll;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .parallax, .parallax2 {
+    background-attachment: scroll; /* Cambia a "scroll" en dispositivos móviles */
   }
 }
 /* Mejor alarma de españa */
@@ -205,6 +212,16 @@
   height: 50px;
 }
 
+.sin {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .fixed-call-button {
+    bottom: 80px; /* Ajusta la distancia desde la parte inferior */
+  }
+}
 /*imagen y texto */
 .contai .slogan {
   font-size: 1.25rem;
