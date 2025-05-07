@@ -104,6 +104,8 @@ max-height: 80px;
 .central-img {
   max-width: 400px;
   height: auto;
+  border-radius: round($number: 0.5rem);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 768px) {
   .central-img {
