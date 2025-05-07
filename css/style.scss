@@ -102,7 +102,7 @@ max-height: 80px;
 }
 
 .central-img {
-  max-width: 400px;
+  max-width: 300px; /* Ajusta el tamaño máximo de la imagen central */
   height: auto;
   border-radius: round($number: 0.5rem);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -374,5 +374,10 @@ max-height: 80px;
 
 .special-offer {
   animation: pulse 3s infinite; /* Aplica la animación con un ciclo infinito */
+}
+
+.feature-box img {
+  max-width: 100px; /* Ajusta el tamaño máximo de los íconos */
+  height: auto;
 }
 
