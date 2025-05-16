@@ -57,9 +57,13 @@
 }
 
 .branding {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #ffc107;
+  /* Amarillo Bootstrap */
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.18);
+  letter-spacing: 2px;
+  margin: 0;
+  transition: color 0.3s;
 }
 
 .logo {
@@ -82,7 +86,8 @@
 
 .parallax2 {
   background-image: url("../assets/parallax/2.jpg");
-  height: 400px; /* Ajusta la altura según sea necesario */
+  height: 400px;
+  /* Ajusta la altura según sea necesario */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,13 +95,16 @@
 }
 
 @media only screen and (max-device-width: 1366px) {
-  .parallax2, .parallax {
+  .parallax2,
+  .parallax {
     background-attachment: scroll;
   }
 }
 @media only screen and (max-width: 768px) {
-  .parallax, .parallax2 {
-    background-attachment: scroll; /* Cambia a "scroll" en dispositivos móviles */
+  .parallax,
+  .parallax2 {
+    background-attachment: scroll;
+    /* Cambia a "scroll" en dispositivos móviles */
   }
 }
 /* Mejor alarma de españa */
@@ -106,7 +114,8 @@
 }
 
 .central-img {
-  max-width: 300px; /* Ajusta el tamaño máximo de la imagen central */
+  max-width: 300px;
+  /* Ajusta el tamaño máximo de la imagen central */
   height: auto;
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -154,28 +163,34 @@
 
 /* Estilos generales para el footer */
 .footer {
-  background-color: #212529; /* Fondo oscuro negro/gris */
-  color: #fff; /* Texto blanco por defecto */
+  background-color: #212529;
+  /* Fondo oscuro negro/gris */
+  color: #fff;
+  /* Texto blanco por defecto */
 }
 
 /* Línea superior amarilla */
 .footer hr {
-  border-top: 2px solid #d4d700; /* Amarillo neón */
+  border-top: 2px solid #d4d700;
+  /* Amarillo neón */
 }
 
 /* Títulos en amarillo neón */
 .footer h5.text-warning {
-  color: #d4d700; /* Amarillo neón */
+  color: #d4d700;
+  /* Amarillo neón */
 }
 
 /* Estilo para el texto de teléfono (amarillo neón) */
 .footer p.text-warning {
-  color: #d4d700; /* Amarillo neón */
+  color: #d4d700;
+  /* Amarillo neón */
 }
 
 /* Íconos de teléfono (rojo degradado) */
 .phone-icon {
-  background: linear-gradient(to right, #d22e4c, #e07ea0); /* Rojo a fucsia */
+  background: linear-gradient(to right, #d22e4c, #e07ea0);
+  /* Rojo a fucsia */
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -183,34 +198,46 @@
 
 /* Texto aclaratorio en gris claro */
 .footer a:hover {
-  color: #fff; /* Blanco al pasar el ratón */
+  color: #fff;
+  /* Blanco al pasar el ratón */
 }
 
 /* Input de teléfono */
 /* Botón de enviar */
 .btn-warning {
-  background-color: #d4d700; /* Amarillo neón */
-  border-color: #d4d700; /* Borde amarillo */
+  background-color: #d4d700;
+  /* Amarillo neón */
+  border-color: #d4d700;
+  /* Borde amarillo */
 }
 
 .btn-warning:hover {
-  background-color: #d22e4c; /* Rojo degradado al pasar el ratón */
-  border-color: #d22e4c; /* Rojo degradado al pasar el ratón */
+  background-color: #d22e4c;
+  /* Rojo degradado al pasar el ratón */
+  border-color: #d22e4c;
+  /* Rojo degradado al pasar el ratón */
 }
 
 /* was */
 .fixed-call-button {
   position: fixed;
-  bottom: 20px; /* Distancia desde la parte inferior */
-  right: 20px; /* Distancia desde la parte derecha */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
-  border-radius: 50%; /* Hace que el botón sea redondo */
-  padding: 10px; /* Espaciado interno */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  bottom: 20px;
+  /* Distancia desde la parte inferior */
+  right: 20px;
+  /* Distancia desde la parte derecha */
+  z-index: 1000;
+  /* Asegura que esté por encima de otros elementos */
+  border-radius: 50%;
+  /* Hace que el botón sea redondo */
+  padding: 10px;
+  /* Espaciado interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra para destacar */
 }
 
 .fixed-call-button img {
-  width: 50px; /* Ajusta el tamaño del icono */
+  width: 50px;
+  /* Ajusta el tamaño del icono */
   height: 50px;
 }
 
@@ -221,7 +248,8 @@
 
 @media (max-width: 768px) {
   .fixed-call-button {
-    bottom: 80px; /* Ajusta la distancia desde la parte inferior */
+    bottom: 80px;
+    /* Ajusta la distancia desde la parte inferior */
   }
 }
 /*imagen y texto */
@@ -290,15 +318,18 @@
 
 /* Estilos para la oferta especial */
 .special-offer {
-  grid-column: 1/-1; /* Ocupa toda la fila */
-  border: 2px solid orange; /* Ejemplo de borde para destacar */
+  grid-column: 1/-1;
+  /* Ocupa toda la fila */
+  border: 2px solid orange;
+  /* Ejemplo de borde para destacar */
   padding: 20px;
   text-align: center;
   border-radius: 8px;
 }
 
 .special-offer-image {
-  max-width: 50%; /* Ajusta el tamaño de la imagen de la oferta */
+  max-width: 50%;
+  /* Ajusta el tamaño de la imagen de la oferta */
   height: auto;
   margin-bottom: 10px;
 }
@@ -324,7 +355,8 @@
 }
 
 .special-offer-features li::before {
-  content: "⭐"; /* Un icono diferente para la oferta */
+  content: "⭐";
+  /* Un icono diferente para la oferta */
   color: orange;
   margin-right: 8px;
 }
@@ -332,10 +364,12 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .product-grid {
-    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    grid-template-columns: 1fr;
+    /* Una columna en pantallas pequeñas */
   }
   .special-offer {
-    grid-column: 1; /* Ocupa la columna en pantallas pequeñas */
+    grid-column: 1;
+    /* Ocupa la columna en pantallas pequeñas */
   }
   .special-offer-image {
     max-width: 80%;
@@ -343,17 +377,21 @@
 }
 @keyframes pulse {
   0%, 100% {
-    transform: scale(1); /* Tamaño original */
+    transform: scale(1);
+    /* Tamaño original */
   }
   50% {
-    transform: scale(1.05); /* Crece ligeramente */
+    transform: scale(1.05);
+    /* Crece ligeramente */
   }
 }
 .special-offer {
-  animation: pulse 3s infinite; /* Aplica la animación con un ciclo infinito */
+  animation: pulse 3s infinite;
+  /* Aplica la animación con un ciclo infinito */
 }
 
 .feature-box img {
-  max-width: 50px; /* Ajusta el tamaño máximo de los íconos */
+  max-width: 50px;
+  /* Ajusta el tamaño máximo de los íconos */
   height: auto;
 }/*# sourceMappingURL=style.css.map */
