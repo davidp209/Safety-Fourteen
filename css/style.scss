@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 @import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 
 
 .logo {
   max-height: 100px;
+
 }
 
 .nombreEmpresa {
@@ -64,8 +67,12 @@
 }
 
 .branding {
-  font-family: 'Montserrat', Arial, sans-serif;
-  color: #ffc107;
+  transform: skew(-10deg);
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: yellow;
   /* Amarillo Bootstrap */
   text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.18);
   letter-spacing: 2px;
@@ -73,9 +80,7 @@
   transition: color 0.3s;
 }
 
-.logo {
-  max-height: 80px;
-}
+
 
 .logoMain {
   max-height: 130px;
