@@ -67,6 +67,9 @@
 }
 
 .branding {
+  display: flex;
+  align-items: center;
+  gap: 15px; // Espacio entre logo y texto
   transform: skew(-10deg);
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
@@ -78,6 +81,7 @@
   letter-spacing: 2px;
   margin: 0;
   transition: color 0.3s;
+  
 }
 
 

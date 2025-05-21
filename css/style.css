@@ -58,6 +58,9 @@
 }
 
 .branding {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   transform: skew(-10deg);
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
