@@ -2,37 +2,29 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
-
-
 .logo {
   max-height: 100px;
-
 }
-
 .nombreEmpresa {
   font-size: 2rem;
   font-weight: bold;
 }
-
 .header {
   background-color: $background-color;
 
 }
-
 .carrusel {
 
   width: 50%;
   height: 50%;
 
 }
-
 .fraseCelebre {
   font-family: "Playfair Display SC", serif;
   font-weight: 600;
   font-style: normal;
   margin: 40px 0;
 }
-
 
 /////* HEADER *//
 .contact-banner {
